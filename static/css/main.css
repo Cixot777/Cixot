@@ -2,7 +2,7 @@
 body {margin-left: 20px;
 margin-right: 20px;}
 h1,h2,h3,h4,h5,h6 {
-	front-weight: bold;
+	font-weight: bold;
 }
 .alert{/*Ми додали відстань лише зверху елемента*/
 	margin-top:10px;
@@ -22,4 +22,11 @@ padding-top:10px;}
 	height: 30px;
 	line-height: 30px;
 	color: #555555;}
+.box {border: 1px solid #cccccc;
+	text-align: center;
+	padding-top: 0px;}
+table {margin-top: 20px;
+ 		}
+.date-text{text-align: center;}
+
 
