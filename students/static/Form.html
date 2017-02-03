@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+
+<meta charset="utf-8">
+	<title>Форма редагування Студента</title>
+	<meta name="description"
+			value="Система Обліку Студентів Навчального Закладу"/>
+	<link rel="stylesheet" 
+			href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
+			<!--Include Styles-->	
+</head>
+<body>
+<h1>Форма редагування Студента</h1>
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="name" class="col-sm-2 control-label">Ім'я*</label>
+    <div class="col-sm-2">
+      <input type="text" class="form-control" id="name" placeholder="Введіть ім'я">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="father" class="col-sm-2 control-label">По-батькові</label>
+    <div class="col-sm-2">
+      <input type="text" class="form-control" id="father" placeholder="Введіть по-батькові">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="family" class="col-sm-2 control-label">Прізвище*</label>
+    <div class="col-sm-2">
+      <input type="text" class="form-control" id="family" placeholder="Введіть прізвище">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="bilets" class="col-sm-2 control-label">№ білету</label>
+    <div class="col-sm-2">
+      <input type="number" class="form-control" id="bilets" placeholder="Введіть номер білету">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="birthday" class="col-sm-2 control-label">Дата народження</label>
+    <div class="col-sm-2">
+      <input type="dates" class="form-control" id="birthday" placeholder="Введіть дату народження">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="photo" class="col-sm-2 control-label">Фото</label>
+    <div class="col-sm-2">
+      <label>Наразі:<a href="#">photo</a></label><br>
+      <label>Очистити</label><br>
+    </div>
+   </div>
+    <div class="form-group">
+    <label for="photo" class="col-sm-2 control-label"> </label>
+    <div class="col-sm-2">
+      <label>Змінити:</label>
+      <input type="file" name=" " placeholder="..">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="groups" class="col-sm-2 control-label">Група*</label>
+    <div class="col-sm-2">
+      <input type="number" class="form-control" id="groups" placeholder="Виберіть групу">
+    </div>
+   </div>
+   <div class="form-group">
+    <label for="groups" class="col-sm-2 control-label">Додаткові нотаткиі</label>
+    <div class="col-sm-2">
+      <textarea type="text" class="form-control" id="groups"></textarea>
+    </div>
+   </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <a class="btn btn-primary">Зберегти</a>
+      <a class="btn btn-link">Скасувати</a>
+    </div>
+  </div>
+</form>
+</body>
+</html>

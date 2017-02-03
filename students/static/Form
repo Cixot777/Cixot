@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+
+<meta charset="utf-8">
+	<title>Форма редагування Студента</title>
+	<meta name="description"
+			value="Система Обліку Студентів Навчального Закладу"/>
+
+			<!--Include Styles-->
+	<link rel="stylesheet" 
+			href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<style type="text/css">.col-xs-12, .col-xs-4, .col-xs-8</style>
+</head>
+<body>
+		
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+		<script src="https://cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
