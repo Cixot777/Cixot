@@ -1,60 +1,14 @@
+{% extends "students/base.html" %}
+
 {% load staticfiles %}
 
-<!DOCTYPE html>
-<html lang="uk">
-<head>
+{% block meta_title %} Групи {% endblock meta_title %}
 
-<meta charset="utf-8">
-	<title>Сервіс обліку студентів</title>
-	<meta name="description"
-			value="Система Обліку Студентів Навчального Закладу"/>
-	<meta name="viewport"
-			content="width=device-width, initial-scale=1">
-			<!--Include Styles-->
-	
-	<link rel="stylesheet" 
-			href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="{% static "css/main.css" %}">
-	<style type="text/css">.col-xs-12, .col-xs-4, .col-xs-8</style>
-</head>
-<body>
-	<!--Start Container-->
-		<div class="container"></div>
-	<!--Start Header-->
-		<div class="row" id="header"></div>
-	<!--Logo-->
-		<div class="col-xs-8">
-			<h1> Сервіс Обліку Студентів</h1>
-		</div>
-	<!--Groups Selector-->
-		<div class="col-xs-4" id="group-selector">
-			<strong>Група</strong>
-			<select>
-				<option value="">Усі студенти</option>
-				<option value="">МТМ - 21, Подоба Віталій (№254)</option>
-				<option value="">МТМ - 22, Корост Андрій (№2123)</option>
-			</select>
-		</div>
-	<!--End Header-->
+{% block title %} База Груп {% endblock title %}
 
-	<!--Start SubHeader-->
-		<div class="row" id="sub-header">
-			<div class="col-xs-12">
-				<ul class="nav nav-tabs" role="tablist">
-					<li role="presentation" class="active"><a href="{% url "home" %}">Студенти</a></li>
-					<li role="presentation"> <a href="/journal">Відвідування</a></li>
-					<li role="presentation"> <a href="{% url "groups" %}">Групи</a></li>
-				</ul>
-			</div>
-		</div>
-	<!--End SubHeader-->
-	<!--Start Main Page Content-->
-	<div class="row" id="content-columns">
-		<div class="col-xs-12" id="content-column">
-			<!--Status Message-->
-			<div class="alert alert-warning">Зміни скасовано</div>
-			<h2>Групи</h2>
-			<!-- Add Student Button -->
+{% block content %}
+
+			<!-- Add Group Button -->
 			<a class="btn btn-primary" href="{% url "groups_add" %}">Додати групу</a>
 			<div>
 				<!-- Start Students Listing-->
@@ -98,23 +52,4 @@
 				<li><a href="#">&raquo;</a></li>
 				</ul>
 			</nav>
-			</div>
-			<!--End students Listing-->
-		</div>
-	</div>
-	<!--End Main Page Content-->
-
-	<!--Start Footer-->
-		<div class="row" id="footer">
-			<div class="col-xs-12">
-			&copy; 2014 Сервіс Обліку Студентів
-			</div>
-		</div>
-	<!-- End Footer-->
-	</div>
-	<!--End Container-->
-	<!--Java Script Section-->
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
-		<script src="https://cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-</body>
-</html>
+{% endblock content %}
